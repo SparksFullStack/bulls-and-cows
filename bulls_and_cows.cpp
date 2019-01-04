@@ -13,7 +13,8 @@ int main()
   constexpr int NUMBER_OF_TURNS = 5;
   for (int guessNum = 1; guessNum <= NUMBER_OF_TURNS; guessNum++)
   {
-    GetGuess();
+    string Guess = GetGuess();
+    cout << "Your guess was: " << Guess << endl;
     cout << endl;
   }
 
@@ -33,6 +34,5 @@ string GetGuess()
   string Guess = "";
   getline(cin, Guess);
 
-  cout << "Your guess was: " << Guess << endl;
   return Guess;
 };
