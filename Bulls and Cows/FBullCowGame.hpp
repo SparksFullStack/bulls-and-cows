@@ -10,6 +10,7 @@
 #define FBullCowGame_hpp
 
 #include <stdio.h>
+#include <string>
 
 class FBullCowGame {
 public:
@@ -17,12 +18,12 @@ public:
     int GetMaxTries();
     int GetCurrentTry;
     bool IsGameWon();
-    bool CheckGuessValidity(string); // TODO make a more rich return value
+    bool CheckGuessValidity(std::string); // TODO make a more rich return value
     
     
 // will add content later
 private:
     
-}
+};
 
 #endif /* FBullCowGame_hpp */
